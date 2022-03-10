@@ -3,12 +3,12 @@
  * @date: 09 mar 2022
  * @author: Lucas Prado
  * @brief: Aula 00 exercicio 5
- * Defina um tipo abstrato de dados que irá representar bandas de música.
- * Essa estrutura deve ter o nome da banda, que tipo de música ela toca, o número de integrantes, e em que posição do ranking essa banda está dentre as suas 5 bandas favoritas.
- * a) Crie uma função para preencher as 5 estruturas de bandas criadas no exemplo passado;
- * b) Após criar e preencher, exiba todas as informações das bandas/estruturas;
- * c) Crie uma função que peça ao usuário um número de 1 até 5.
- * Em seguida, seu programa deve exibir informações da banda cuja posição no seu ranking é a que foi solicitada pelo usuário.
+ * Defina um tipo abstrato de dados que irÃ¡ representar bandas de mÃºsica.
+ * Essa estrutura deve ter o nome da banda, que tipo de mÃºsica ela toca, o nÃºmero de integrantes, e em que posiÃ§Ã£o do ranking essa banda estÃ¡ dentre as suas 5 bandas favoritas.
+ * a) Crie uma funÃ§Ã£o para preencher as 5 estruturas de bandas criadas no exemplo passado;
+ * b) ApÃ³s criar e preencher, exiba todas as informaÃ§Ãµes das bandas/estruturas;
+ * c) Crie uma funÃ§Ã£o que peÃ§a ao usuÃ¡rio um nÃºmero de 1 atÃ© 5.
+ * Em seguida, seu programa deve exibir informaÃ§Ãµes da banda cuja posiÃ§Ã£o no seu ranking Ã© a que foi solicitada pelo usuÃ¡rio.
  */
 
 #include <stdio.h>
@@ -54,11 +54,10 @@ void preencheBandas(Banda *bandas){
         scanf("%d", &bandas[i].ranking);
     for(int j = 0; j < 5; j++){
         if(bandas[i].ranking == bandas[j].ranking && i != j){
-            printf("Digite o ranking novamente, pois essa posição está ocupada: ");
+            printf("Digite o ranking novamente, pois essa posiÃ§Ã£o estÃ¡ ocupada: ");
             scanf("%d", &bandas[i].ranking);
         }//if
-    }//for
-        
+    }//for        
         system("cls");
     }//for
     return;
