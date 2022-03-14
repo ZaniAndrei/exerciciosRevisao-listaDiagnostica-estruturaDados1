@@ -3,16 +3,16 @@
  * @date: 09 mar 2022
  * @author: Lucas Prado
  * @brief: Aula 00 exercicio 1
- * Um ponteiro pode ser usado para dizer a uma funçãoo onde ela deve depositar o resultado de seus cálculos. 
- * Escreva uma função que converta uma quantidade de minutos na notação horas/minutos. 
- * A função recebe como parâmetro: um número inteiro (totalMinutos); e os endereços de duas variáveis inteiras, horas e minutos.
+ * Um ponteiro pode ser usado para dizer a uma funÃ§Ã£oo onde ela deve depositar o resultado de seus cÃ¡lculos. 
+ * Escreva uma funÃ§Ã£o que converta uma quantidade de minutos na notaÃ§Ã£o horas/minutos. 
+ * A funÃ§Ã£o recebe como parÃ¢metro: um nÃºmero inteiro (totalMinutos); e os endereÃ§os de duas variÃ¡veis inteiras, horas e minutos.
  * 
- * A função deve então atribuir valores às variáveis passadas por referência, de modo que os valores atribuídos respeitem as seguintes condições:
+ * A funÃ§Ã£o deve entÃ£o atribuir valores Ã s variÃ¡veis passadas por referÃªncia, de modo que os valores atribuÃ­dos respeitem as seguintes condiÃ§Ãµes:
  *                                      minutos < 60
  *                          60 ? horas + minutos = totalMinutos
- * Escreva também a função principal (main) que use a função desenvolvida.
+ * Escreva tambÃ©m a funÃ§Ã£o principal (main) que use a funÃ§Ã£o desenvolvida.
  */
-
+//ssssssssssssssssss
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -25,7 +25,7 @@ int main(){
         scanf("%d", &totalMinutos);
     }while(totalMinutos < 0);
 
-    //chamar função
+    //chamar funÃ§Ã£o
     calculaMinutos(&totalMinutos, &horas, &minutos);
     printf("Horas: %d Minutos: %d\n", horas, minutos);
     return 0;
